@@ -27,6 +27,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy Headers File
+        run: |
+          cp public/_headers dist/_headers
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
