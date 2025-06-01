@@ -101,8 +101,8 @@ function Home() {
       <ContentWrapper>
         <Title>图像处理工具</Title>
         <Subtitle>选择底图颜色开始处理图像</Subtitle>
-        <OptionButton to="/black">黑色底图处理</OptionButton>
-        <OptionButton to="/white">白色底图处理</OptionButton>
+        <OptionButton to="/pinhaotu/black">黑色底图处理</OptionButton>
+        <OptionButton to="/pinhaotu/white">白色底图处理</OptionButton>
       </ContentWrapper>
     </Container>
   );
@@ -110,7 +110,7 @@ function Home() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pinhaotu">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/black" element={<BlackBackgroundProcessor />} />
